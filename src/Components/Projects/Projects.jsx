@@ -13,6 +13,10 @@ function Projects() {
     navigate('/travelproject'); 
     scroll(0,0)
   };
+  const handlePythonSubmit = () => {
+    navigate('/pythonProject'); 
+    scroll(0,0)
+  };
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -128,6 +132,7 @@ function Projects() {
           {/* Custom View Project Button */}
           <div className="flex justify-center mt-4">
             <button
+            onClick={handlePythonSubmit}
               className="relative group cursor-pointer text-sky-50 overflow-hidden h-10 w-56 rounded-md bg-green-800 p-2 flex justify-center items-center font-extrabold"
             >
               <div className="absolute top-3 right-20 group-hover:top-12 group-hover:-right-12 z-10 w-40 h-40 rounded-full group-hover:scale-150 group-hover:opacity-50 duration-500 bg-green-900"></div>

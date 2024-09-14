@@ -54,7 +54,7 @@ function SmallCardsBanner() {
     <div className="flex flex-col items-center p-6 bg-gray-900 text-white">
       {/* Full Name Header */}
       <h1 className="text-3xl font-bold text-green-500 mb-4">
-        Ayan Nandiy Nirjan
+        Ayan Nandy Nirjan
       </h1>
 
       {/* Summary Section */}

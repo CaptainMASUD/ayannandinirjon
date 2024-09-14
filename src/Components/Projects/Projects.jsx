@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaReact, FaBootstrap, FaCss3Alt, FaPython, FaMicrochip, FaRegLightbulb } from 'react-icons/fa';
+import { SiArduino } from 'react-icons/si';
 import traveltribe from '../../Images/Project/trabeltribe.png';
 import pythonproject from '../../Images/Project/pythonproject.png';
 import humanfollowingRobot from '../../Images/Project/humanfollowinrobot.jpg';
@@ -31,40 +33,53 @@ function Projects() {
     >
       {/* Header */}
       <motion.h1
-        className="text-green-500 text-5xl font-bold text-center mb-16 tracking-wide"
+        className="text-green-500 text-3xl font-bold text-center mb-16 tracking-wide"
         initial="hidden"
         animate="visible"
         transition={{ duration: 0.6 }}
       >
-        Ayan's Featured Projects
+        My Featured Projects
       </motion.h1>
 
       {/* Projects Grid */}
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 px-8 md:px-16"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-12"
         initial="hidden"
         animate="visible"
         variants={containerVariants}
       >
         {/* Travel Tribe Project Card */}
         <motion.div
-          className="border border-green-500 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2"
+          className="border border-green-500 p-4 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-2"
           variants={itemVariants}
         >
-          <div className="relative overflow-hidden rounded-xl">
+          <div className="relative overflow-hidden rounded-md">
             <img
               src={traveltribe}
               alt="Travel Tribe"
-              className="w-full h-52 object-cover rounded-md transition-transform duration-500 hover:scale-105"
+              className="w-full h-40 object-cover rounded-md transition-transform duration-500 hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80 transition-opacity duration-300 hover:opacity-50"></div>
+
+            {/* Technology Stack Buttons */}
+            <div className="absolute bottom-4 left-4 flex space-x-2">
+              <button className="border border-green-500 text-green-500 p-2 rounded-md hover:bg-green-500 hover:text-black">
+                <FaReact />
+              </button>
+              <button className="border border-green-500 text-green-500 p-2 rounded-md hover:bg-green-500 hover:text-black">
+                <FaBootstrap />
+              </button>
+              <button className="border border-green-500 text-green-500 p-2 rounded-md hover:bg-green-500 hover:text-black">
+                <FaCss3Alt />
+              </button>
+            </div>
           </div>
-          <h2 className="text-white text-2xl font-bold mt-6 mb-4">Travel Tribe Project</h2>
-          <p className="text-gray-400 mb-6">
+          <h2 className="text-white text-lg font-bold mt-4 mb-2">Travel Tribe Project</h2>
+          <p className="text-gray-400 text-sm">
             A web platform for travelers to connect and explore new destinations together.
           </p>
-          
-          {/* View Project Button - Bottom Center */}
+
+          {/* Custom View Project Button */}
           <div className="flex justify-center mt-4">
             <button
               className="relative group cursor-pointer text-sky-50 overflow-hidden h-10 w-56 rounded-md bg-green-800 p-2 flex justify-center items-center font-extrabold"
@@ -80,23 +95,30 @@ function Projects() {
 
         {/* Python Project Card */}
         <motion.div
-          className="border border-green-500 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2"
+          className="border border-green-500 p-4 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-2"
           variants={itemVariants}
         >
-          <div className="relative overflow-hidden rounded-xl">
+          <div className="relative overflow-hidden rounded-md">
             <img
               src={pythonproject}
               alt="Python Project"
-              className="w-full h-52 object-cover rounded-md transition-transform duration-500 hover:scale-105"
+              className="w-full h-40 object-cover rounded-md transition-transform duration-500 hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80 transition-opacity duration-300 hover:opacity-50"></div>
+
+            {/* Technology Stack Buttons */}
+            <div className="absolute bottom-4 left-4 flex space-x-2">
+              <button className="border border-green-500 text-green-500 p-2 rounded-md hover:bg-green-500 hover:text-black">
+                <FaPython />
+              </button>
+            </div>
           </div>
-          <h2 className="text-white text-2xl font-bold mt-6 mb-4">Python Automation Project</h2>
-          <p className="text-gray-400 mb-6">
+          <h2 className="text-white text-lg font-bold mt-4 mb-2">Python Automation Project</h2>
+          <p className="text-gray-400 text-sm">
             A Python project focusing on automation and data analysis to streamline processes.
           </p>
-          
-          {/* View Project Button - Bottom Center */}
+
+          {/* Custom View Project Button */}
           <div className="flex justify-center mt-4">
             <button
               className="relative group cursor-pointer text-sky-50 overflow-hidden h-10 w-56 rounded-md bg-green-800 p-2 flex justify-center items-center font-extrabold"
@@ -112,23 +134,36 @@ function Projects() {
 
         {/* Human Following Robot Project Card */}
         <motion.div
-          className="border border-green-500 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2"
+          className="border border-green-500 p-4 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-2"
           variants={itemVariants}
         >
-          <div className="relative overflow-hidden rounded-xl">
+          <div className="relative overflow-hidden rounded-md">
             <img
               src={humanfollowingRobot}
               alt="Human Following Robot"
-              className="w-full h-52 object-cover rounded-md transition-transform duration-500 hover:scale-105"
+              className="w-full h-40 object-cover rounded-md transition-transform duration-500 hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80 transition-opacity duration-300 hover:opacity-50"></div>
+
+            {/* Technology Stack Buttons */}
+            <div className="absolute bottom-4 left-4 flex space-x-2">
+              <button className="border border-green-500 text-green-500 p-2 rounded-md hover:bg-green-500 hover:text-black">
+                <SiArduino />
+              </button>
+              <button className="border border-green-500 text-green-500 p-2 rounded-md hover:bg-green-500 hover:text-black">
+                <FaMicrochip />
+              </button>
+              <button className="border border-green-500 text-green-500 p-2 rounded-md hover:bg-green-500 hover:text-black">
+                <FaRegLightbulb />
+              </button>
+            </div>
           </div>
-          <h2 className="text-white text-2xl font-bold mt-6 mb-4">Human Following Robot</h2>
-          <p className="text-gray-400 mb-6">
+          <h2 className="text-white text-lg font-bold mt-4 mb-2">Human Following Robot</h2>
+          <p className="text-gray-400 text-sm">
             A robotics project building a robot that can autonomously follow humans.
           </p>
-          
-          {/* View Project Button - Bottom Center */}
+
+          {/* Custom View Project Button */}
           <div className="flex justify-center mt-4">
             <button
               className="relative group cursor-pointer text-sky-50 overflow-hidden h-10 w-56 rounded-md bg-green-800 p-2 flex justify-center items-center font-extrabold"

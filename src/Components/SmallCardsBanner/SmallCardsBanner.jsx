@@ -59,7 +59,7 @@ function SmallCardsBanner() {
 
       {/* Summary Section */}
       <p className="text-lg mb-6 text-center">
-        I am <strong className="text-green-500">Ayan Nandi Nirjon</strong>, a passionate traveler, photographer, and biker who loves exploring new places and capturing moments through my lens.
+        I am <strong className="text-green-500">Ayan Nandy Nirjan</strong>, a passionate traveler, photographer, and biker who loves exploring new places and capturing moments through my lens.
       </p>
 
       {/* Card Buttons */}

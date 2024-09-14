@@ -14,19 +14,19 @@ const closeButtonStyles = "absolute top-4 right-4 text-green-500 cursor-pointer 
 const details = {
   camera: {
     title: "Photography",
-    description: "Ayan is passionate about capturing moments through photography. His portfolio includes stunning images from his travels and adventures."
+    description: "I am passionate about capturing moments through photography. My portfolio includes stunning images from my travels and adventures."
   },
   motorcycle: {
     title: "Biking",
-    description: "As an avid biker, Ayan enjoys exploring new terrains on his motorcycle. His biking journeys take him through scenic routes and off-road adventures."
+    description: "As an avid biker, I enjoy exploring new terrains on my motorcycle. =My biking journeys take me through scenic routes and off-road adventures."
   },
   location: {
     title: "Travel",
-    description: "Ayan loves to travel and explore new places. His adventures have taken him to various popular destinations, offering unique experiences and stories."
+    description: "I loves to travel and explore new places. My adventures have taken me to various popular destinations, offering unique experiences and stories."
   },
   camp: {
     title: "Camping",
-    description: "Ayan enjoys camping and spending nights under the stars. His camping trips are filled with memorable experiences and connections with nature."
+    description: "I enjoys camping and spending nights under the stars. My camping trips are filled with memorable experiences and connections with nature."
   }
 };
 
@@ -54,7 +54,7 @@ function SmallCardsBanner() {
     <div className="flex flex-col items-center p-6 bg-gray-900 text-white">
       {/* Full Name Header */}
       <h1 className="text-3xl font-bold text-green-500 mb-4">
-        Ayan Nandi Nirjon
+        Ayan Nandiy Nirjan
       </h1>
 
       {/* Summary Section */}

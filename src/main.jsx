@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import Home from './Components/Home/Home.jsx';
 import Layout from './Components/Layout/Layout.jsx';
+import TravelTribe from './Components/ProjectDetilsCard/TravelTribe.jsx';
+import PythonProject from './Components/ProjectDetilsCard/PythonProject.jsx';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,14 @@ const router = createBrowserRouter([
       {
         path: '',
         element: <Home />
+      },
+      {
+        path: 'travelproject',
+        element: <TravelTribe />
+      },
+      {
+        path: 'pythonProject',
+        element: <PythonProject />
       },
     ]
   }

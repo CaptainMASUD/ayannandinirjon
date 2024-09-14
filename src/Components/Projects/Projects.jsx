@@ -5,8 +5,14 @@ import { SiArduino } from 'react-icons/si';
 import traveltribe from '../../Images/Project/trabeltribe.png';
 import pythonproject from '../../Images/Project/pythonproject.png';
 import humanfollowingRobot from '../../Images/Project/humanfollowinrobot.jpg';
+import {useNavigate} from 'react-router-dom'
 
 function Projects() {
+  const navigate = useNavigate()
+  const handleTribeSubmit = () => {
+    navigate('/travelproject'); 
+    scroll(0,0)
+  };
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -18,7 +24,7 @@ function Projects() {
       },
     },
   };
-
+ 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
@@ -82,6 +88,7 @@ function Projects() {
           {/* Custom View Project Button */}
           <div className="flex justify-center mt-4">
             <button
+            onClick={handleTribeSubmit}
               className="relative group cursor-pointer text-sky-50 overflow-hidden h-10 w-56 rounded-md bg-green-800 p-2 flex justify-center items-center font-extrabold"
             >
               <div className="absolute top-3 right-20 group-hover:top-12 group-hover:-right-12 z-10 w-40 h-40 rounded-full group-hover:scale-150 group-hover:opacity-50 duration-500 bg-green-900"></div>

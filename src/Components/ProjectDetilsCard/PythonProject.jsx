@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaCode, FaGithub, FaGoogle } from 'react-icons/fa';
-import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaCode, FaUserShield, FaPlane, FaUsers, FaPercent, FaUserCog, FaGoogle } from 'react-icons/fa';
+import { FaFacebook, FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
 import pythonprojectImage from '../../Images/Project/pythonproject.png';
+import CodeBlock from './CodeBlock';
 
 // Define section variants for animations
 const sectionVariants = {
@@ -26,20 +27,14 @@ function PythonProject() {
   return (
     <div className="w-full h-auto py-16 bg-gradient-to-b from-gray-900 to-black text-white px-6 md:px-12">
       {/* Banner Section */}
+     
       <motion.div
         className="w-full flex justify-center mb-12"
         initial="hidden"
         animate="visible"
         variants={sectionVariants}
       >
-        <div className="w-full max-w-5xl">
-          <motion.img
-            src={pythonprojectImage}
-            alt="Python Project"
-            className="w-full h-64 object-cover rounded-lg shadow-lg"
-            variants={sectionVariants}
-          />
-        </div>
+      
       </motion.div>
 
       {/* Header Section */}
@@ -49,12 +44,12 @@ function PythonProject() {
         animate="visible"
         variants={sectionVariants}
       >
-        <h1 className="text-4xl font-bold text-green-500 mb-4">Python Project</h1>
+        <h1 className="text-4xl font-bold text-green-500 mb-4">Python Travel Agency Project</h1>
         <p className="text-lg">
-          An advanced Python project developed using Google Colab for robust data analysis and machine learning.
+          A console-based Python project designed for students and travelers, offering discount packages, optimized security, and admin control.
         </p>
       </motion.div>
-
+      <CodeBlock/>
       {/* Features Section */}
       <motion.div
         className="border border-green-500 p-8 rounded-lg shadow-md mb-12"
@@ -64,39 +59,67 @@ function PythonProject() {
       >
         <h2 className="text-2xl font-bold text-green-500 mb-6">Project Features</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Feature 1 */}
+          {/* Feature 1: Student Discounts */}
+          <motion.div
+            className="flex flex-col items-center text-center"
+            variants={sectionVariants}
+          >
+            <FaPercent className="text-green-500 text-4xl mb-4" />
+            <h3 className="text-xl font-bold mb-2">Student Discounts</h3>
+            <p className="text-gray-400">Exclusive travel discounts for students, providing affordable travel options.</p>
+          </motion.div>
+
+          {/* Feature 2: Travel-Friendly Packages */}
+          <motion.div
+            className="flex flex-col items-center text-center"
+            variants={sectionVariants}
+          >
+            <FaPlane className="text-green-500 text-4xl mb-4" />
+            <h3 className="text-xl font-bold mb-2">Travel-Friendly Packages</h3>
+            <p className="text-gray-400">Tailored packages designed to meet the needs of frequent travelers and tourists.</p>
+          </motion.div>
+
+          {/* Feature 3: Better Logic and Optimization */}
           <motion.div
             className="flex flex-col items-center text-center"
             variants={sectionVariants}
           >
             <FaCode className="text-green-500 text-4xl mb-4" />
-            <h3 className="text-xl font-bold mb-2">Code Implementation</h3>
-            <p className="text-gray-400">Robust and scalable code written in Python using best practices.</p>
+            <h3 className="text-xl font-bold mb-2">Optimized Logic</h3>
+            <p className="text-gray-400">Improved and optimized code for efficient booking and management processes.</p>
           </motion.div>
 
-          {/* Feature 2 */}
+          {/* Feature 4: Security Features */}
+          <motion.div
+            className="flex flex-col items-center text-center"
+            variants={sectionVariants}
+          >
+            <FaUserShield className="text-green-500 text-4xl mb-4" />
+            <h3 className="text-xl font-bold mb-2">Enhanced Security</h3>
+            <p className="text-gray-400">Robust security measures implemented to protect user data and transactions.</p>
+          </motion.div>
+
+          {/* Feature 5: Admin Panel */}
+          <motion.div
+            className="flex flex-col items-center text-center"
+            variants={sectionVariants}
+          >
+            <FaUserCog className="text-green-500 text-4xl mb-4" />
+            <h3 className="text-xl font-bold mb-2">Admin Panel</h3>
+            <p className="text-gray-400">A comprehensive admin panel for managing users, bookings, and packages.</p>
+          </motion.div>
+
+          {/* Feature 6: GitHub Repository */}
           <motion.div
             className="flex flex-col items-center text-center"
             variants={sectionVariants}
           >
             <FaGithub className="text-green-500 text-4xl mb-4" />
             <h3 className="text-xl font-bold mb-2">GitHub Repository</h3>
-            <p className="text-gray-400">Accessible repository for code versioning and collaboration.</p>
-          </motion.div>
-
-          {/* Feature 3 */}
-          <motion.div
-            className="flex flex-col items-center text-center"
-            variants={sectionVariants}
-          >
-            <FaGoogle className="text-green-500 text-4xl mb-4" />
-            <h3 className="text-xl font-bold mb-2">Google Colab</h3>
-            <p className="text-gray-400">Interactive Python notebooks for real-time code execution and visualization.</p>
+            <p className="text-gray-400">Version control system using GitHub for managing project updates and collaboration.</p>
           </motion.div>
         </div>
       </motion.div>
-
- 
 
       {/* Team Section */}
       <motion.div
@@ -117,10 +140,10 @@ function PythonProject() {
             <h3 className="text-xl font-bold mb-2"><span className='text-green-500'>Ayan</span> Nandy Nirjan</h3>
             <p className="text-gray-400">Instructor and R&D expert</p>
             <div className="flex justify-center mt-4">
-              <a href="https://facebook.com/your-profile" target="_blank" rel="noopener noreferrer">
+              <a href="https://facebook.com/ayan" target="_blank" rel="noopener noreferrer">
                 <FaFacebook className="text-green-600 text-2xl mx-2" />
               </a>
-              <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/ayan" target="_blank" rel="noopener noreferrer">
                 <FaGithub className="text-green-600 text-2xl mx-2" />
               </a>
             </div>
@@ -131,18 +154,18 @@ function PythonProject() {
             <img
               src="https://avatars.githubusercontent.com/u/108082819?v=4"
               alt="Masudul Alam"
-              className="w-32  ring-4 ring-green-500 h-32 object-cover rounded-full mb-4 mx-auto"
+              className="w-32 ring-4 ring-green-500 h-32 object-cover rounded-full mb-4 mx-auto"
             />
             <h3 className="text-xl font-bold mb-2"><span className='text-green-500'>Masudul</span> Alam</h3>
             <p className="text-gray-400">Full Stack Web Developer</p>
             <div className="flex justify-center mt-4">
-              <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">
+              <a href="https://linkedin.com/in/masudulalam" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="text-green-700 text-2xl mx-2" />
               </a>
-              <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/masudulalam" target="_blank" rel="noopener noreferrer">
                 <FaGithub className="text-green-600 text-2xl mx-2" />
               </a>
-              <a href="https://twitter.com/your-twitter" target="_blank" rel="noopener noreferrer">
+              <a href="https://twitter.com/masudulalam" target="_blank" rel="noopener noreferrer">
                 <FaTwitter className="text-green-600 text-2xl mx-2" />
               </a>
             </div>

@@ -91,3 +91,61 @@
   scrollbar-width: thin;
 }
 
+/* Styling the code block */
+.code-block-container {
+  background-color: #1e1e1e; /* Dark editor-like background */
+  color: #dcdcdc; /* Default code color */
+  border-radius: 10px;
+  overflow: auto;
+  height: 400px;
+  width: 100%;
+}
+
+/* Custom scrollbar with green-500 color */
+.code-block-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.code-block-container::-webkit-scrollbar-track {
+  background-color: #2b2b2b;
+}
+
+.code-block-container::-webkit-scrollbar-thumb {
+  background-color: #22c55e; /* Green-500 color */
+  border-radius: 10px;
+}
+
+/* Scrollbar for Firefox */
+.code-block-container {
+  scrollbar-width: thin;
+  scrollbar-color: #22c55e #2b2b2b;
+}
+
+/* PrismJS custom colors */
+.token.keyword {
+  color: #ff79c6; /* Keywords (e.g., class, def) */
+}
+
+.token.function {
+  color: #50fa7b; /* Function names */
+}
+
+.token.string {
+  color: #f1fa8c; /* Strings */
+}
+
+.token.comment {
+  color: #6272a4; /* Comments */
+}
+
+.token.variable {
+  color: #ffb86c; /* Variables */
+}
+
+.token.parameter {
+  color: #bd93f9; /* Parameters */
+}
+
+.token.number {
+  color: #ff5555; /* Numbers */
+}

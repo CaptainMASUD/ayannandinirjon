@@ -10,6 +10,8 @@ import Home from './Components/Home/Home.jsx';
 import Layout from './Components/Layout/Layout.jsx';
 import TravelTribe from './Components/ProjectDetilsCard/TravelTribe.jsx';
 import PythonProject from './Components/ProjectDetilsCard/PythonProject.jsx';
+import HumanFollowingRobot from './Components/ProjectDetilsCard/HumanFollowingRobot.jsx';
+import VideoLibrary from './Components/VideoLibrary/VideoLibrary.jsx';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +29,14 @@ const router = createBrowserRouter([
       {
         path: 'pythonProject',
         element: <PythonProject />
+      },
+      {
+        path: 'humanfollowingrobot',
+        element: <HumanFollowingRobot />
+      },
+      {
+        path: 'videolibrary',
+        element: <VideoLibrary />
       },
     ]
   }

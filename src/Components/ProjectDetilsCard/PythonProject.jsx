@@ -5,7 +5,7 @@ import { FaFacebook, FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
 import pythonprojectImage from '../../Images/Project/pythonproject.png';
 import CodeBlock from './CodeBlock';
 
-// Define section variants for animations
+
 const sectionVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },

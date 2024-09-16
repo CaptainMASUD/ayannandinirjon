@@ -12,6 +12,11 @@ import TravelTribe from './Components/ProjectDetilsCard/TravelTribe.jsx';
 import PythonProject from './Components/ProjectDetilsCard/PythonProject.jsx';
 import HumanFollowingRobot from './Components/ProjectDetilsCard/HumanFollowingRobot.jsx';
 import VideoLibrary from './Components/VideoLibrary/VideoLibrary.jsx';
+import AboutMe from './Components/AboutMe/AboutMe.jsx';
+import { MdDarkMode } from 'react-icons/md';
+import DarkMode from './Components/DarkMode/DarkMode.jsx';
+import Html from './Components/DarkMode/Language/Html/Html.jsx';
+import Css from './Components/DarkMode/Language/CSS/CSS.jsx';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +42,22 @@ const router = createBrowserRouter([
       {
         path: 'videolibrary',
         element: <VideoLibrary />
+      },
+      {
+        path: 'aboutme',
+        element: <AboutMe />
+      },
+      {
+        path: 'darkmode',
+        element: <DarkMode/>
+      },
+      {
+        path: 'html',
+        element: <Html/>
+      },
+      {
+        path: 'css',
+        element: <Css/>
       },
     ]
   }

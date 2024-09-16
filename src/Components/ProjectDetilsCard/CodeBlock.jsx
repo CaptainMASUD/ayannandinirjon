@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Prism from 'prismjs';
-import 'prismjs/components/prism-python'; // Import Python language syntax highlighting
-import 'prismjs/themes/prism-tomorrow.css'; // You can use any Prism theme
+import 'prismjs/components/prism-python'; 
+import 'prismjs/themes/prism-tomorrow.css'; 
 import { FaRegCopy, FaSave, FaShareAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
@@ -12,7 +12,7 @@ const PythonCodeBlock = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    Prism.highlightAll(); // Highlight all code blocks after component mounts
+    Prism.highlightAll(); 
   }, []);
 
   const codeString = `
@@ -348,7 +348,7 @@ if __name__ == "__main__":
   const copyToClipboard = () => {
     navigator.clipboard.writeText(codeString).then(() => {
       setCopied(true);
-      setTimeout(() => setCopied(false), 2000); // Reset "copied" state after 2 seconds
+      setTimeout(() => setCopied(false), 2000);
     });
   };
 
@@ -365,12 +365,11 @@ if __name__ == "__main__":
       navigator.share({
         title: 'Python Code',
         text: 'Check out this Python code!',
-        url: window.location.href, // Share the current page URL
+        url: window.location.href, 
       })
       .then(() => console.log('Share was successful.'))
       .catch((error) => console.log('Sharing failed', error));
     } else {
-      // Fallback for browsers that do not support the Web Share API
       const encodedCode = encodeURIComponent(codeString);
       const shareUrl = `https://your-sharing-service.com?code=${encodedCode}`;
       window.open(shareUrl, '_blank');

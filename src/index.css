@@ -77,31 +77,31 @@
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #22c55e; /* green-500 */
+  background-color: #22c55e; 
   border-radius: 10px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  background-color: #1f2937; /* gray-800 */
+  background-color: #1f2937; 
 }
 
 /* Firefox Scrollbar */
 .custom-scrollbar {
-  scrollbar-color: #22c55e #1f2937; /* green-500 on gray-800 */
+  scrollbar-color: #22c55e #1f2937; 
   scrollbar-width: thin;
 }
 
 /* Styling the code block */
 .code-block-container {
-  background-color: #1e1e1e; /* Dark editor-like background */
-  color: #dcdcdc; /* Default code color */
+  background-color: #1e1e1e; 
+  color: #dcdcdc;
   border-radius: 10px;
   overflow: auto;
   height: 400px;
   width: 100%;
 }
 
-/* Custom scrollbar with green-500 color */
+
 .code-block-container::-webkit-scrollbar {
   width: 10px;
 }
@@ -111,7 +111,7 @@
 }
 
 .code-block-container::-webkit-scrollbar-thumb {
-  background-color: #22c55e; /* Green-500 color */
+  background-color: #22c55e; 
   border-radius: 10px;
 }
 
@@ -123,29 +123,31 @@
 
 /* PrismJS custom colors */
 .token.keyword {
-  color: #ff79c6; /* Keywords (e.g., class, def) */
+  color: #ff79c6; 
 }
 
 .token.function {
-  color: #50fa7b; /* Function names */
+  color: #50fa7b;
 }
 
 .token.string {
-  color: #f1fa8c; /* Strings */
+  color: #f1fa8c;
 }
 
 .token.comment {
-  color: #6272a4; /* Comments */
+  color: #6272a4; 
 }
 
 .token.variable {
-  color: #ffb86c; /* Variables */
+  color: #ffb86c; 
 }
 
 .token.parameter {
-  color: #bd93f9; /* Parameters */
+  color: #bd93f9; 
 }
 
 .token.number {
-  color: #ff5555; /* Numbers */
+  color: #ff5555; 
 }
+
+

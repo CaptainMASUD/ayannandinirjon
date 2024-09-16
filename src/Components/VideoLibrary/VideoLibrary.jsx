@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import bike2 from '../../Videos/Bike/Ayanvideo2.mp4'; // Background video
+import bike2 from '../../Videos/Bike/Ayanvideo2.mp4'; 
 import bike from "../../Videos/Bike/ayanvidoe1.mp4";
 import ayanfbbikebanner from '../../Images/VideoBanner/AyanFbPage.jpg';
 import { IoPlayOutline } from 'react-icons/io5';
@@ -8,7 +8,7 @@ import { IoPlayOutline } from 'react-icons/io5';
 function VideoLibrary() {
   const [showMore, setShowMore] = useState(false);
   const [playingVideo, setPlayingVideo] = useState({});
-  const [loading, setLoading] = useState(true); // Loading state
+  const [loading, setLoading] = useState(true); 
 
   const videoData = [
     { id: 1, title: 'Video 1', src: bike },
@@ -22,7 +22,7 @@ function VideoLibrary() {
   ];
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 2000); // Simulate loading
+    setTimeout(() => setLoading(false), 2000); 
   }, []);
 
   const handleToggle = () => {

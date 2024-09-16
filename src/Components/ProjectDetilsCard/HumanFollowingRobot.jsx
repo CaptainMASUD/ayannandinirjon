@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion'; // Import motion
+import { motion } from 'framer-motion'; 
 import humanfollowingrobotproject from "../../Images/Project/humanfollowinrobot.jpg";
 import { FaRobot, FaTools, FaCode, FaCamera, FaBatteryHalf, FaMicrochip } from 'react-icons/fa';
 

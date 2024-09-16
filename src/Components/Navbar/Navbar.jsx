@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   FaHome,
   FaVideo,
@@ -11,13 +11,20 @@ import {
   FaMapSigns,
 } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate, useLocation } from 'react-router-dom';
+import { GiSkullShield } from "react-icons/gi";
+import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 
 function Navbar() {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const [isModalVisible, setIsModalVisible] = useState(false);
-  const [hasNotification, setHasNotification] = useState(true); // Track if there are notifications
+  const [isKeyModalVisible, setIsKeyModalVisible] = useState(false);
+  const [hasNotification, setHasNotification] = useState(true); 
+  const [inputKey, setInputKey] = useState('');
+  const [keyError, setKeyError] = useState('');
+  const [showKey, setShowKey] = useState(false); // State for showing/hiding key input
   const navigate = useNavigate();
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsMenuVisible((prev) => !prev);
@@ -31,6 +38,26 @@ function Navbar() {
   const toggleModal = () => {
     setIsModalVisible(!isModalVisible);
   };
+
+  const toggleKeyModal = () => {
+    setIsKeyModalVisible(!isKeyModalVisible);
+  };
+
+  const handleKeySubmit = (e) => {
+    e.preventDefault();
+    const correctKey = '#nandy6149A';
+    if (inputKey === correctKey) {
+      navigate('/darkmode');
+      setIsKeyModalVisible(false);
+    } else {
+      setKeyError('Invalid key. Please try again.');
+    }
+  };
+
+  // Reset scroll position on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
     <>
@@ -89,13 +116,18 @@ function Navbar() {
                   </motion.div>
                 }
                 label="Notifications"
-                onClick={toggleModal} // Open modal on click
+                onClick={toggleModal} 
               />
               <NavButton
-                to="/about"
+                to="/aboutme"
                 icon={<FaUserAlt />}
                 label="About Me"
-                onClick={() => handleNavClick('/about')}
+                onClick={() => handleNavClick('/aboutme')}
+              />
+              <NavButton
+                icon={<GiSkullShield />}
+                label="Nandy Dark"
+                onClick={toggleKeyModal}
               />
             </motion.div>
           )}
@@ -162,6 +194,69 @@ function Navbar() {
               <p className="mt-4 text-sm text-gray-400">
                 Stay tuned for more details about the upcoming tour.
               </p>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Modal for Key Input */}
+      <AnimatePresence>
+        {isKeyModalVisible && (
+          <motion.div
+            className="fixed inset-0 bg-slate-900 bg-opacity-75 flex justify-center items-center z-50"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+          >
+            <div className="relative bg-slate-900 text-white p-8 rounded-lg shadow-lg max-w-lg w-full">
+              {/* Modal Header */}
+              <div className="flex justify-between items-center">
+                <h2 className="text-2xl font-bold text-green-500">
+                  Enter Key to Access Nandy Dark Mode
+                </h2>
+                {/* Close Button */}
+                <button
+                  onClick={toggleKeyModal}
+                  className="text-white hover:text-red-500"
+                >
+                  <FaTimes />
+                </button>
+              </div>
+
+              {/* Key Input Form */}
+              <form onSubmit={handleKeySubmit} className="mt-4">
+                <label className="block text-sm">
+                  <span className="font-semibold">Access Key:</span>
+                  <div className="relative">
+                    <input
+                      type={showKey ? 'text' : 'password'}
+                      value={inputKey}
+                      onChange={(e) => setInputKey(e.target.value)}
+                      className="mt-1 block w-full bg-gray-800 text-white border border-gray-600 rounded py-2 px-3 pr-10"
+                      required
+                    />
+                    <button
+                      type="button"
+                      onClick={() => setShowKey(!showKey)}
+                      className="absolute inset-y-0 right-0 flex items-center pr-3"
+                    >
+                      {showKey ? (
+                        <AiFillEyeInvisible className="text-gray-400" />
+                      ) : (
+                        <AiFillEye className="text-gray-400" />
+                      )}
+                    </button>
+                  </div>
+                </label>
+                {keyError && <p className="text-red-500 mt-2">{keyError}</p>}
+                <button
+                  type="submit"
+                  className="mt-4 bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded"
+                >
+                  Submit
+                </button>
+              </form>
             </div>
           </motion.div>
         )}

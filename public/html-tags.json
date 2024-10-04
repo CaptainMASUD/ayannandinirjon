@@ -1,0 +1,31 @@
+[
+    {
+      "tagName": "a",
+      "example": "<a href=\"https://www.example.com\">Visit Example</a>"
+    },
+    {
+      "tagName": "abbr",
+      "example": "<abbr title=\"Abbreviation\">abbr</abbr>"
+    },
+    {
+      "tagName": "address",
+      "example": "<address>Email: <a href=\"mailto:someone@example.com\">someone@example.com</a></address>"
+    },
+    {
+      "tagName": "area",
+      "example": "<area shape=\"rect\" coords=\"34,44,270,350\" href=\"link.html\" alt=\"Description\">"
+    },
+    {
+      "tagName": "article",
+      "example": "<article><h2>Article Title</h2><p>Article content</p></article>"
+    },
+    {
+      "tagName": "aside",
+      "example": "<aside><p>Related content</p></aside>"
+    },
+    {
+      "tagName": "audio",
+      "example": "<audio controls><source src=\"audio.mp3\" type=\"audio/mpeg\">Your browser does not support the audio element.</audio>"
+    }
+  ]
+  

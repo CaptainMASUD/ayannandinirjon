@@ -4,31 +4,31 @@ import { motion } from 'framer-motion';
 // Slide data
 const slides = [
   {
-    url: 'https://scontent.fdac41-1.fna.fbcdn.net/v/t39.30808-6/404677727_3529629277279309_3878507928470223803_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeGqGFJW_hP4meQ5rc4F_d2UN7a2ZFHxKdY3trZkUfEp1q7YypNgehgv8a2eqZFPkhhVPc6rjP-SL7HtC7IX_m53&_nc_ohc=vWO-OYRiKqUQ7kNvgGjrEXa&_nc_ht=scontent.fdac41-1.fna&_nc_gid=AUaGzWnhHg-2Se-H_VXHwS7&oh=00_AYBstv987U78oDTQ7PgbpVq5kv9tRaEm8y4ldXbqcxo56g&oe=66E9BAE0',
+    url: 'https://scontent.fdac41-1.fna.fbcdn.net/v/t39.30808-6/404677727_3529629277279309_3878507928470223803_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeGqGFJW_hP4meQ5rc4F_d2UN7a2ZFHxKdY3trZkUfEp1q7YypNgehgv8a2eqZFPkhhVPc6rjP-SL7HtC7IX_m53&_nc_ohc=Y9Ij-8YNeQoQ7kNvgFwGJ-w&_nc_ht=scontent.fdac41-1.fna&_nc_gid=AZxixvq1yggVilyYllOWVFE&oh=00_AYDvhNBBbY9uKmEBavh-S5qfN0SiPOxGoy9HzZjq1xQUBQ&oe=67061320',
     title: 'Discover Bangladesh',
     description: 'Explore the beauty of Bangladesh through the lens of a traveler.',
     buttonText: 'Explore Now',
   },
   {
-    url: 'https://scontent.fdac41-1.fna.fbcdn.net/v/t39.30808-6/394626852_3511087422466828_8606531106337456889_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeE9hN98w-tVmKkFDAuZfKaKMhRLLTj4kv4yFEstOPiS_g8kq8oGmLroxNpBN3LH3dR_7aOdwlXjSU9_MGVPHIaI&_nc_ohc=L_OxitKTj5UQ7kNvgFeEhiR&_nc_ht=scontent.fdac41-1.fna&_nc_gid=AkTD7uuRmCmmhBtMQAk7fwg&oh=00_AYAIV2jBM24C0NyJWhPKGn7sjt45eeLLxi_cXxE7OLGFmw&oe=66E99E53',
+    url: 'https://scontent.fdac41-1.fna.fbcdn.net/v/t39.30808-6/394626852_3511087422466828_8606531106337456889_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeE9hN98w-tVmKkFDAuZfKaKMhRLLTj4kv4yFEstOPiS_g8kq8oGmLroxNpBN3LH3dR_7aOdwlXjSU9_MGVPHIaI&_nc_ohc=veLZ9loMy3kQ7kNvgEBSnsH&_nc_ht=scontent.fdac41-1.fna&_nc_gid=A7VA_YexhdxD4TBtOF-80Dz&oh=00_AYDYCACq2-7lwS21sha-MXgYCTZEpGMFA7vEumjJ1ln41A&oe=6705F693',
     title: 'Adventure Awaits',
     description: 'Embark on thrilling adventures and scenic rides.',
     buttonText: 'Join the Adventure',
   },
   {
-    url: 'https://scontent.fdac41-1.fna.fbcdn.net/v/t39.30808-6/422899703_3572204596355110_2108986116195153240_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeEJu9wlg1p1zUkyGv4xkzQ52m9wXSZyKRHab3BdJnIpEbrWzP9_B_IboKd9BrIofCoYbfH2plI01nWysoBaBPpf&_nc_ohc=cfer_Sx4obkQ7kNvgFTldG9&_nc_ht=scontent.fdac41-1.fna&_nc_gid=ATBqNumY8xaWfeUnq8_pFe-&oh=00_AYCqIohZMiAfy6ApLpyW_8br125FLFEBJ4aXATKGCCfHwg&oe=66E9A283',
+    url: 'https://scontent.fdac41-1.fna.fbcdn.net/v/t39.30808-6/422899703_3572204596355110_2108986116195153240_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeEJu9wlg1p1zUkyGv4xkzQ52m9wXSZyKRHab3BdJnIpEbrWzP9_B_IboKd9BrIofCoYbfH2plI01nWysoBaBPpf&_nc_ohc=-lYHB4GFV1UQ7kNvgFz2Ayx&_nc_ht=scontent.fdac41-1.fna&_nc_gid=Aq1QHEucTy3JHGx_MAaPxIY&oh=00_AYAdnFsOb_4ztnl0ApVnEFdCPbgsjAwPTE3CyvvullJYuw&oe=6705FAC3',
     title: 'Photography Passion',
     description: 'Capture the moments that matter with a keen eye for detail.',
     buttonText: 'See the Gallery',
   },
   {
-    url: 'https://scontent.fdac41-2.fna.fbcdn.net/v/t39.30808-6/458292315_3726654064243495_2528226091234002174_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeHYSBCrhpfMDvkAA6mtOxQfEUWVkLFQ9FYRRZWQsVD0Vm29M0c9dMW8SJzj55OLuxjJDKa5Kn0IFyhGqfDH_rtU&_nc_ohc=EOUYAahEancQ7kNvgEYBO0p&_nc_ht=scontent.fdac41-2.fna&_nc_gid=AGwfXzbVyKb4hMTB2c_WDEV&oh=00_AYB1SmGD1bO5wYWjGgWiD22RRQ_HF4gdxdctU4Eq9WHSnQ&oe=66E98A8B',
+    url: 'https://scontent.fdac41-2.fna.fbcdn.net/v/t39.30808-6/458292315_3726654064243495_2528226091234002174_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeHYSBCrhpfMDvkAA6mtOxQfEUWVkLFQ9FYRRZWQsVD0Vm29M0c9dMW8SJzj55OLuxjJDKa5Kn0IFyhGqfDH_rtU&_nc_ohc=iJCCnjnVJSIQ7kNvgGoTTuZ&_nc_ht=scontent.fdac41-2.fna&_nc_gid=A62l_SWxoiRvJA1I7Yw0zlF&oh=00_AYBYDvsM6imnNOhmzHjNnhL3RcW1EGjg40gGx5ViPMgS-g&oe=6705E2CB',
     title: 'Travel Tales',
     description: 'Read about exciting travel stories and experiences.',
     buttonText: 'Read More',
   },
   {
-    url: 'https://scontent.fdac41-1.fna.fbcdn.net/v/t39.30808-6/351379485_1682990282161871_1591719328914145302_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeHozwFEnnvLrcRopreVkVG-CsxZEXMOUtwKzFkRcw5S3PoeO_5exZc0SjdcQdRkNsUrlkH0X0ljeBAjMFTQs4Jv&_nc_ohc=u_1YJ0o-RRAQ7kNvgGFMD8q&_nc_ht=scontent.fdac41-1.fna&_nc_gid=AloTtbgL5DfC1HG_5Nie2hN&oh=00_AYBuoM0LzXq4gWiIGGALIOiJ7vQ4s8jJ4anWAITKji8kCQ&oe=66E99EF1',
+    url: 'https://scontent.fdac41-1.fna.fbcdn.net/v/t39.30808-6/351379485_1682990282161871_1591719328914145302_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeHozwFEnnvLrcRopreVkVG-CsxZEXMOUtwKzFkRcw5S3PoeO_5exZc0SjdcQdRkNsUrlkH0X0ljeBAjMFTQs4Jv&_nc_ohc=R3hkCiQ-1KcQ7kNvgFiWCXO&_nc_ht=scontent.fdac41-1.fna&_nc_gid=AyDv4IW0b_41k7Jz3qW5pkk&oh=00_AYBNViOYQaZQjycQzzHSrrBFKwgDDu8dORsf2qqtX1Ldlw&oe=6705F731',
     title: 'Biker Diaries',
     description: 'Follow the journey of a passionate biker across diverse terrains.',
     buttonText: 'Check the Diaries',

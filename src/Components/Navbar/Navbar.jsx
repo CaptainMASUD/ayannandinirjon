@@ -182,8 +182,8 @@ function Navbar() {
                 <li className="flex items-center space-x-2">
                   <FaMapSigns className="text-green-400" />
                   <span>
-                    <strong>Tour Announcement:</strong> After the mid-term
-                    exams, an exciting tour is planned!{' '}
+                    <strong>Tour Announcement:</strong> On 6th October
+                    the journey will be start at 10:20 PM Updated on : 10/4/2024{' '}
                     {/* Notification Dot */}
                     <span className="ml-2 h-3 w-3 bg-red-600 rounded-full inline-block"></span>
                   </span>

@@ -8,28 +8,28 @@ const cardData = [
     title: "Photography",
     icon: <FaCamera className="text-4xl text-green-500" />,
     description: "I captures stunning moments through his lens during his travels and adventures.",
-    image: 'https://shorturl.at/TZnfe', // Example background image for photography
+    image: 'https://scontent.fdac41-1.fna.fbcdn.net/v/t39.30808-6/422899703_3572204596355110_2108986116195153240_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeEJu9wlg1p1zUkyGv4xkzQ52m9wXSZyKRHab3BdJnIpEbrWzP9_B_IboKd9BrIofCoYbfH2plI01nWysoBaBPpf&_nc_ohc=-lYHB4GFV1UQ7kNvgFz2Ayx&_nc_ht=scontent.fdac41-1.fna&_nc_gid=Aq1QHEucTy3JHGx_MAaPxIY&oh=00_AYAdnFsOb_4ztnl0ApVnEFdCPbgsjAwPTE3CyvvullJYuw&oe=6705FAC3', // Example background image for photography
     buttonText: "Explore!"
   },
   {
     title: "Biking",
     icon: <FaMotorcycle className="text-4xl text-green-500" />,
     description: "As an avid biker, I loves to explore new terrains on his motorcycle.",
-    image: 'https://shorturl.at/8ddCD', // Example background image for biking
+    image: 'https://scontent.fdac41-2.fna.fbcdn.net/v/t39.30808-6/458292315_3726654064243495_2528226091234002174_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeHYSBCrhpfMDvkAA6mtOxQfEUWVkLFQ9FYRRZWQsVD0Vm29M0c9dMW8SJzj55OLuxjJDKa5Kn0IFyhGqfDH_rtU&_nc_ohc=iJCCnjnVJSIQ7kNvgGoTTuZ&_nc_ht=scontent.fdac41-2.fna&_nc_gid=A62l_SWxoiRvJA1I7Yw0zlF&oh=00_AYBYDvsM6imnNOhmzHjNnhL3RcW1EGjg40gGx5ViPMgS-g&oe=6705E2CB', // Example background image for biking
     buttonText: "Explore!"
   },
   {
     title: "Travel",
     icon: <FaMapMarkerAlt className="text-4xl text-green-500" />,
     description: "I's travels take him to popular destinations, where I experiences unique cultures.",
-    image: 'https://shorturl.at/RcI2A', // Example background image for travel
+    image: 'https://scontent.fdac41-1.fna.fbcdn.net/v/t39.30808-6/351379485_1682990282161871_1591719328914145302_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeHozwFEnnvLrcRopreVkVG-CsxZEXMOUtwKzFkRcw5S3PoeO_5exZc0SjdcQdRkNsUrlkH0X0ljeBAjMFTQs4Jv&_nc_ohc=R3hkCiQ-1KcQ7kNvgFiWCXO&_nc_ht=scontent.fdac41-1.fna&_nc_gid=AyDv4IW0b_41k7Jz3qW5pkk&oh=00_AYBNViOYQaZQjycQzzHSrrBFKwgDDu8dORsf2qqtX1Ldlw&oe=6705F731', // Example background image for travel
     buttonText: "Explore!"
   },
   {
     title: "Camping",
     icon: <FaCampground className="text-4xl text-green-500" />,
     description: "I enjoys camping, spending peaceful nights under the stars, and connecting with nature.",
-    image: 'https://shorturl.at/ZVX0k', // Example background image for camping
+    image: 'https://scontent.fdac41-1.fna.fbcdn.net/v/t39.30808-6/404677727_3529629277279309_3878507928470223803_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeGqGFJW_hP4meQ5rc4F_d2UN7a2ZFHxKdY3trZkUfEp1q7YypNgehgv8a2eqZFPkhhVPc6rjP-SL7HtC7IX_m53&_nc_ohc=Y9Ij-8YNeQoQ7kNvgFwGJ-w&_nc_ht=scontent.fdac41-1.fna&_nc_gid=AZxixvq1yggVilyYllOWVFE&oh=00_AYDvhNBBbY9uKmEBavh-S5qfN0SiPOxGoy9HzZjq1xQUBQ&oe=67061320', // Example background image for camping
     buttonText: "Explore!"
   }
 ];

@@ -1,0 +1,107 @@
+[
+    {
+      "tagName": "SELECT",
+      "example": "SELECT * FROM users;",
+      "description": "Retrieves data from a database."
+    },
+    {
+      "tagName": "INSERT",
+      "example": "INSERT INTO users (name, email) VALUES ('John Doe', 'john@example.com');",
+      "description": "Inserts new data into a database."
+    },
+    {
+      "tagName": "UPDATE",
+      "example": "UPDATE users SET email = 'john.doe@example.com' WHERE name = 'John Doe';",
+      "description": "Updates existing data in a database."
+    },
+    {
+      "tagName": "DELETE",
+      "example": "DELETE FROM users WHERE name = 'John Doe';",
+      "description": "Deletes data from a database."
+    },{
+        "tagName": "SELECT",
+        "example": "SELECT * FROM users;",
+        "description": "Retrieves all records from the 'users' table."
+      },
+      {
+        "tagName": "INSERT",
+        "example": "INSERT INTO users (name, email) VALUES ('John', 'john@example.com');",
+        "description": "Inserts a new record into the 'users' table with specified values."
+      },
+      {
+        "tagName": "UPDATE",
+        "example": "UPDATE users SET email = 'john.doe@example.com' WHERE name = 'John';",
+        "description": "Updates the 'email' field of the user named 'John'."
+      },
+      {
+        "tagName": "DELETE",
+        "example": "DELETE FROM users WHERE name = 'John';",
+        "description": "Deletes the record of the user named 'John' from the 'users' table."
+      },
+      {
+        "tagName": "CREATE TABLE",
+        "example": "CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), email VARCHAR(255));",
+        "description": "Creates a new 'users' table with columns for 'id', 'name', and 'email'."
+      },
+      {
+        "tagName": "DROP TABLE",
+        "example": "DROP TABLE users;",
+        "description": "Deletes the 'users' table from the database."
+      },
+      {
+        "tagName": "ALTER TABLE",
+        "example": "ALTER TABLE users ADD COLUMN age INT;",
+        "description": "Adds a new 'age' column to the 'users' table."
+      },
+      {
+        "tagName": "JOIN",
+        "example": "SELECT users.name, orders.amount FROM users INNER JOIN orders ON users.id = orders.user_id;",
+        "description": "Performs an INNER JOIN between the 'users' and 'orders' tables based on matching 'user_id'."
+      },
+      {
+        "tagName": "LEFT JOIN",
+        "example": "SELECT users.name, orders.amount FROM users LEFT JOIN orders ON users.id = orders.user_id;",
+        "description": "Retrieves all records from 'users', and the matching records from 'orders'."
+      },
+      {
+        "tagName": "RIGHT JOIN",
+        "example": "SELECT users.name, orders.amount FROM users RIGHT JOIN orders ON users.id = orders.user_id;",
+        "description": "Retrieves all records from 'orders', and the matching records from 'users'."
+      },
+      {
+        "tagName": "CREATE DATABASE",
+        "example": "CREATE DATABASE mydatabase;",
+        "description": "Creates a new database called 'mydatabase'."
+      },
+      {
+        "tagName": "DROP DATABASE",
+        "example": "DROP DATABASE mydatabase;",
+        "description": "Deletes the 'mydatabase' from the MySQL server."
+      },
+      {
+        "tagName": "GRANT",
+        "example": "GRANT ALL PRIVILEGES ON mydatabase.* TO 'user'@'localhost';",
+        "description": "Grants all privileges on 'mydatabase' to 'user' at 'localhost'."
+      },
+      {
+        "tagName": "REVOKE",
+        "example": "REVOKE ALL PRIVILEGES ON mydatabase.* FROM 'user'@'localhost';",
+        "description": "Revokes all privileges on 'mydatabase' from 'user' at 'localhost'."
+      },
+      {
+        "tagName": "SHOW TABLES",
+        "example": "SHOW TABLES;",
+        "description": "Displays a list of all tables in the current database."
+      },
+      {
+        "tagName": "DESCRIBE",
+        "example": "DESCRIBE users;",
+        "description": "Displays the structure of the 'users' table."
+      },
+      {
+        "tagName": "USE",
+        "example": "USE mydatabase;",
+        "description": "Selects 'mydatabase' for subsequent operations."
+      }
+  ]
+  

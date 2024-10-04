@@ -17,6 +17,7 @@ import { MdDarkMode } from 'react-icons/md';
 import DarkMode from './Components/DarkMode/DarkMode.jsx';
 import Html from './Components/DarkMode/Language/Html/Html.jsx';
 import Css from './Components/DarkMode/Language/CSS/CSS.jsx';
+import MySQL from './Components/DarkMode/Extra/MySQL/MySQL.jsx';
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
       {
         path: 'css',
         element: <Css/>
+      },
+      {
+        path: 'mysql',
+        element: <MySQL/>
       },
     ]
   }

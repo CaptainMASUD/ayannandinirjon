@@ -49,7 +49,7 @@ const AboutMe = () => {
         variants={itemVariants}
       >
         <img
-          src="https://scontent.fdac41-1.fna.fbcdn.net/v/t39.30808-6/394626852_3511087422466828_8606531106337456889_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeE9hN98w-tVmKkFDAuZfKaKMhRLLTj4kv4yFEstOPiS_g8kq8oGmLroxNpBN3LH3dR_7aOdwlXjSU9_MGVPHIaI&_nc_ohc=-YCPiZSfo9IQ7kNvgFiaTKM&_nc_ht=scontent.fdac41-1.fna&_nc_gid=AXIhR1kj5w4Ho-wkf5ObCgQ&oh=00_AYBXeK9tw3KJctgYPhQktuS1DvxWnza6kbn0rNYatdvKbg&oe=66ECEA13"
+          src="https://scontent.fdac41-2.fna.fbcdn.net/v/t39.30808-6/458292315_3726654064243495_2528226091234002174_n.jpg?stp=dst-jpg_s960x960&_nc_cat=111&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeHYSBCrhpfMDvkAA6mtOxQfEUWVkLFQ9FYRRZWQsVD0Vm29M0c9dMW8SJzj55OLuxjJDKa5Kn0IFyhGqfDH_rtU&_nc_ohc=iJCCnjnVJSIQ7kNvgGoTTuZ&_nc_ht=scontent.fdac41-2.fna&_nc_gid=AO3PnYOuVIDjmt8ITK9Ojmj&oh=00_AYBuAOldr2H4J2lT4SXp_TQdMieCYQR15BLdr5NoVGEXeQ&oe=6705E2CB"
           alt="Banner"
           className="w-full h-60 md:h-80 lg:h-96 object-cover"
         />
@@ -62,7 +62,7 @@ const AboutMe = () => {
       {/* Profile Image and Details */}
       <motion.div className="flex items-start space-x-4 mb-8" variants={itemVariants}>
         <img
-          src="https://scontent.fdac41-1.fna.fbcdn.net/v/t39.30808-6/454467903_3701996050042630_3647676458570200956_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEugYkhPJNPIYbw-MQgubWdzwNOr6LzSOXPA06vovNI5TyJdCCZ2c3OBKL_Tk_i2l1hvnF2g4XZsRWLmRJtrAyT&_nc_ohc=ODLBWZ0jXDUQ7kNvgFlrpS7&_nc_ht=scontent.fdac41-1.fna&_nc_gid=AFUvdjM_OhgmyFbAf6MANVq&oh=00_AYDx1dT6eQhHOmJqYCG0LyQBNyqLWZ7DOZSgBcaoBnVCeA&oe=66ECE70F"
+          src="https://scontent.fdac41-1.fna.fbcdn.net/v/t39.30808-1/454467903_3701996050042630_3647676458570200956_n.jpg?stp=dst-jpg_s200x200&_nc_cat=104&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeEugYkhPJNPIYbw-MQgubWdzwNOr6LzSOXPA06vovNI5TyJdCCZ2c3OBKL_Tk_i2l1hvnF2g4XZsRWLmRJtrAyT&_nc_ohc=-FjyGHOE4NQQ7kNvgFYV6KG&_nc_ht=scontent.fdac41-1.fna&_nc_gid=AO3PnYOuVIDjmt8ITK9Ojmj&oh=00_AYD6cDItVLVmI_ByrgAUqO7UqynxlLgdCYXJATw3kfwhPw&oe=6705E50D"
           alt="Profile"
           className="w-32 h-32 rounded-full shadow-lg border-4 border-green-600"
         />

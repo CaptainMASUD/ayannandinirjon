@@ -10,7 +10,7 @@ function Footer() {
       className="bg-green-900 text-white text-center p-4"
     >
       <div>
-        All rights reserved Ayan Nandy Nirjan © 2024
+        All rights reserved MD REEZWANUL HAQUE EASHAN © 2024
       </div>
     </motion.footer>
   );

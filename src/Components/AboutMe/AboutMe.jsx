@@ -54,7 +54,7 @@ const AboutMe = () => {
           className="w-full h-60 md:h-80 lg:h-96 object-cover"
         />
         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-green-600 to-transparent p-4">
-          <h1 className="text-white text-4xl font-bold">Ayan Nandy Nirjan</h1>
+          <h1 className="text-white text-4xl font-bold">MD REEZWANUL HAQUE EASHAN</h1>
           <p className="text-white">Bike, Travel, and Nature Lover</p>
         </div>
       </motion.div>
@@ -67,7 +67,7 @@ const AboutMe = () => {
           className="w-32 h-32 rounded-full shadow-lg border-4 border-green-600"
         />
         <div>
-          <h2 className="text-2xl font-bold text-gray-300">Ayan Nandy Nirjan</h2>
+          <h2 className="text-2xl font-bold text-gray-300">MD REEZWANUL HAQUE EASHAN</h2>
           <div className="flex items-center space-x-2 mt-2">
             <FaUniversity className="text-green-600" />
             <span className="text-gray-200">Daffodil International University</span>

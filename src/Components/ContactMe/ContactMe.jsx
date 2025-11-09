@@ -34,7 +34,9 @@ function ContactMe() {
           >
             {/* Toggle Button for mobile only */}
             <div className="flex justify-between w-full lg:hidden">
-              <h2 className="text-xl font-bold flex"><FaUser className='mt-1 mr-5'/> Ayan Nandi Nirjon </h2>
+              <h2 className="text-xl font-bold flex">
+                <FaUser className="mt-1 mr-5" /> MD REEZWANUL HAQUE EASHAN
+              </h2>
               <button
                 className="focus:outline-none"
                 onClick={() => setShowDetails(!showDetails)}
@@ -52,7 +54,7 @@ function ContactMe() {
               {/* Centered User Icon and Name */}
               <div className="flex flex-col items-center space-y-4">
                 <FaUserAlt className="text-4xl" />
-                <h2 className="text-2xl font-bold text-center">Ayan Nandi Nirjon</h2>
+                <h2 className="text-2xl font-bold text-center">MD REEZWANUL HAQUE EASHAN</h2>
               </div>
 
               {/* Centered Description */}
@@ -124,7 +126,7 @@ function ContactMe() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="w-full lg:w-2/3 p-6 lg:pl-12 lg:pr-12" // Add extra padding for larger screens
+          className="w-full lg:w-2/3 p-6 lg:pl-12 lg:pr-12"
         >
           <motion.h2
             initial={{ opacity: 0 }}
@@ -204,7 +206,7 @@ function ContactMe() {
                 className="flex justify-center items-center gap-2 px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition duration-300"
               >
                 <FaPaperPlane />
-                Sent 
+                Sent
               </button>
             </motion.div>
           </form>

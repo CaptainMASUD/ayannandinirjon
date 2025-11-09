@@ -18,10 +18,9 @@ function Home() {
       <SmallCardsBanner/>
       <Skills/>
       <Projects/>
-      <Videos/>
+      {/* <Videos/> */}
       <HomeCards/>
       <PlacesCards/>
-      {/* <FunCards/> */}
       <ContactMe/>
     </div>
   )

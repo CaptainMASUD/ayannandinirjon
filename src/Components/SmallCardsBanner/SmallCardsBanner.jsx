@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaCamera, FaMotorcycle, FaMapMarkerAlt, FaCampground } from 'react-icons/fa';
+import { FaCar, FaMapMarkerAlt, FaCode, FaPuzzlePiece, FaUtensils } from 'react-icons/fa';
 import { IoMdClose } from 'react-icons/io';
 import { motion } from 'framer-motion';
 
@@ -12,22 +12,31 @@ const closeButtonStyles = "absolute top-4 right-4 text-green-500 cursor-pointer 
 
 // Details for each modal
 const details = {
-  camera: {
-    title: "Photography",
-    description: "I am passionate about capturing moments through photography. My portfolio includes stunning images from my travels and adventures."
+  driving: {
+    title: "Driving",
+    description:
+      "I enjoy the focus and freedom of driving. Long highway cruises and precise city navigation help me unwind while sharpening my attention to detail.",
   },
-  motorcycle: {
-    title: "Biking",
-    description: "As an avid biker, I enjoy exploring new terrains on my motorcycle. =My biking journeys take me through scenic routes and off-road adventures."
-  },
-  location: {
+  travel: {
     title: "Travel",
-    description: "I loves to travel and explore new places. My adventures have taken me to various popular destinations, offering unique experiences and stories."
+    description:
+      "I love exploring new places and cultures. Each trip brings unique stories, perspectives, and inspiration for what I create next.",
   },
-  camp: {
-    title: "Camping",
-    description: "I enjoys camping and spending nights under the stars. My camping trips are filled with memorable experiences and connections with nature."
-  }
+  programming: {
+    title: "Programming",
+    description:
+      "I build things with code—experimenting with frontend interactions, backend APIs, and tooling that make ideas come alive.",
+  },
+  problemSolving: {
+    title: "Problem Solving",
+    description:
+      "Puzzles, debugging sessions, and system design challenges are my jam. I enjoy breaking problems down and crafting clean solutions.",
+  },
+  foods: {
+    title: "Exploring New Foods",
+    description:
+      "From street snacks to tasting menus, I’m always on the lookout for new flavors and culinary traditions to try.",
+  },
 };
 
 // Framer Motion Variants for Water Flow Animation
@@ -39,9 +48,9 @@ const waterFlowVariants = {
     transition: {
       delay: i * 0.1,
       type: "spring",
-      stiffness: 150
-    }
-  })
+      stiffness: 150,
+    },
+  }),
 };
 
 function SmallCardsBanner() {
@@ -54,43 +63,35 @@ function SmallCardsBanner() {
     <div className="flex flex-col items-center p-6 bg-gray-900 text-white">
       {/* Full Name Header */}
       <h1 className="text-3xl font-bold text-green-500 mb-4">
-        Ayan Nandy Nirjan
+        MD REEZWANUL HAQUE EASHAN
       </h1>
 
       {/* Summary Section */}
       <p className="text-lg mb-6 text-center">
-        I am <strong className="text-green-500">Ayan Nandy Nirjan</strong>, a passionate traveler, photographer, and biker who loves exploring new places and capturing moments through my lens.
+        I am <strong className="text-green-500">MD REEZWANUL HAQUE EASHAN</strong>, a curious explorer who loves driving, traveling, programming, solving problems, and discovering new foods.
       </p>
 
       {/* Card Buttons */}
       <div className="flex space-x-4 mb-4 mt-5 relative">
-        <button
-          className={buttonStyles}
-          onClick={() => openModal('camera')}
-        >
-          <FaCamera className="text-2xl" />
-          <span className={buttonTextStyles}>Photography</span>
+        <button className={buttonStyles} onClick={() => openModal('driving')}>
+          <FaCar className="text-2xl" />
+          <span className={buttonTextStyles}>Driving</span>
         </button>
-        <button
-          className={buttonStyles}
-          onClick={() => openModal('motorcycle')}
-        >
-          <FaMotorcycle className="text-2xl" />
-          <span className={buttonTextStyles}>Biking</span>
-        </button>
-        <button
-          className={buttonStyles}
-          onClick={() => openModal('location')}
-        >
+        <button className={buttonStyles} onClick={() => openModal('travel')}>
           <FaMapMarkerAlt className="text-2xl" />
           <span className={buttonTextStyles}>Travel</span>
         </button>
-        <button
-          className={buttonStyles}
-          onClick={() => openModal('camp')}
-        >
-          <FaCampground className="text-2xl" />
-          <span className={buttonTextStyles}>Camping</span>
+        <button className={buttonStyles} onClick={() => openModal('programming')}>
+          <FaCode className="text-2xl" />
+          <span className={buttonTextStyles}>Programming</span>
+        </button>
+        <button className={buttonStyles} onClick={() => openModal('problemSolving')}>
+          <FaPuzzlePiece className="text-2xl" />
+          <span className={buttonTextStyles}>Problem Solving</span>
+        </button>
+        <button className={buttonStyles} onClick={() => openModal('foods')}>
+          <FaUtensils className="text-2xl" />
+          <span className={buttonTextStyles}>Exploring New Foods</span>
         </button>
       </div>
 

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 // Slide data
 const slides = [
   {
-    url: 'https://scontent.fdac41-1.fna.fbcdn.net/v/t39.30808-6/404677727_3529629277279309_3878507928470223803_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeGqGFJW_hP4meQ5rc4F_d2UN7a2ZFHxKdY3trZkUfEp1q7YypNgehgv8a2eqZFPkhhVPc6rjP-SL7HtC7IX_m53&_nc_ohc=Y9Ij-8YNeQoQ7kNvgFwGJ-w&_nc_ht=scontent.fdac41-1.fna&_nc_gid=AZxixvq1yggVilyYllOWVFE&oh=00_AYDvhNBBbY9uKmEBavh-S5qfN0SiPOxGoy9HzZjq1xQUBQ&oe=67061320',
+    url: 'https://scontent.fdac142-1.fna.fbcdn.net/v/t39.30808-6/462685428_3764935133748721_8863896650389124641_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeHAzol6Y9X-ZD2NO1INFjRASpBzhwbKjJZKkHOHBsqMlniKXXvGVlQYwnYarfY3Cu2THr3zF4E4O-OYhquu8UXG&_nc_ohc=hS0h_s9ioMoQ7kNvgHHji9j&_nc_oc=AdjvGhc2rKE0K2pmGWj2RpKctnxm3mDDCHHd_YBSluzg4lm0QdWKpjy4aKt7gZ2lfE8&_nc_zt=23&_nc_ht=scontent.fdac142-1.fna&_nc_gid=ArQgCwvvoAENe3_kEZPheNi&oh=00_AYArw5QizzcOvnCnda25ZMhNNVCUk12N2xnJbhWUv8VWng&oe=67CBA919',
     title: 'Discover Bangladesh',
     description: 'Explore the beauty of Bangladesh through the lens of a traveler.',
     buttonText: 'Explore Now',
